@@ -1,0 +1,224 @@
+                                   /* global setting */
+@font-face{
+    font-family:"Inter", sans-serif;
+  src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
+}          
+                        
+body{
+    font-family:"Inter", sans-serif ;
+    background-color:rgb(248, 250, 252);
+    padding-top: 80px;
+
+}    
+:root{
+                    /*colors*/
+    --nav-accent-color:rgb(95, 53, 249);  
+    --fav-color:rgb(255, 143, 0);
+    --Emergency-color:rgb(242, 2, 54);
+    --dark-gray-text:rgb(121, 129, 143);
+    --light-gray-color:rgb(153, 161, 175);
+     --contact-color:rgb(21, 93, 252);
+     --contact-bg:rgb(219, 234, 254);
+     --email-color:rgb(155, 84, 254);
+     --email-bg:rgb(237, 233, 254);
+     --location-color:rgb(0, 153, 102);
+     --location-bg:rgb(219, 252, 231);
+     
+              /* font-weights */
+    --font-weight-regular:400;
+    --font-weight-medium:500;
+    --font-weight-bold:600;
+    --font-weight-bolder:700;
+    --font-weight-ultera:900;
+              /* font-size */
+      --font-size-xxs:.5rem;        /*10px*/
+      --font-size-xs:.75rem; /*12px*/
+      --font-size-s:.875rem; /*14px*/
+      --font-size-base:1rem; /*16px*/
+      --font-size-medium:1.125rem; /*18px*/
+      --font-size-lg:1.25rem; /*20px*/
+      --font-size-xl:1.5rem; /*24px*/
+      --font-size-xxl:1.875rem; /*30px*/
+      
+} 
+
+/* colors */
+.nav-bg{background-color: rgb(253, 253, 254);}
+.main-nav-color{color:var(--nav-accent-color);}
+.main-nav-bg{background-color:var(--nav-accent-color);}
+.dark-gray-color{color: var(--dark-gray-text);}
+.contact-color{color: var(--contact-color);}
+.contact-bg-box{background-color: var(--contact-color);}
+.contact-bg{background-color: var(--contact-bg);}
+.light-gray-text{color: var(--light-gray-color);}
+.email-color{color: var(--email-color);}
+.email-bg{color:var(--email-bg);}
+.location-color{color:var(--location-color);}
+.location-bg{background-color: var(--location-bg);}
+.fav-bg-box{background-color: var(--fav-color);}
+.emergency-bg-box{background-color: var(--Emergency-color);}
+.star-color{color: rgb(255, 185, 0);}
+.emergency-color{color:var(--Emergency-color);}
+
+/* font-weight */
+.fw-400{font-weight: var(--font-weight-regular);}
+.fw-500{font-weight: var(--font-weight-medium);}
+.fw-600{font-weight: var(--font-weight-bold);}
+.fw-700{font-weight: var(--font-weight-bolder);}
+.fw-900{font-weight: var(--font-weight-ultera);}
+ /* font-size */
+ .fs-xxs{font-size: var(--font-size-xxs);}
+ .fs-xs{font-size: var(--font-size-xs);}
+ .fs-s{font-size: var(--font-size-s);}
+ .fs-base{font-size: var(--font-size-base);}
+ .fs-md{font-size: var(--font-size-medium);}
+ .fs-lg{font-size: var(--font-size-lg);}
+ .fs-xl{font-size: var(--font-size-xl);}
+  .fs-xxl{font-size: var(--font-size-xxl);}
+
+.fit{width: fit-content;}
+.cursor{cursor:pointer ;}
+.icon{display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/**************************************************************************/
+.main-icon{
+    width: 40px;
+    height: 40px;
+    background-color: var(--nav-accent-color);
+ }
+
+ .navbar-collapse {justify-content: end;}
+ .add-contact-btn{border-radius: 12px;
+    transition: all 0.5s;
+   
+}
+.add-contact-btn:hover{
+    transform: translateY(-5px);
+     box-shadow: 0 4px 8px rgba(95, 53, 249,0.3);
+}
+
+.navbar {
+  --bs-navbar-padding-y: .9375rem;
+}
+/* modal */
+.outline-design{
+    background-color: rgb(249, 250, 251);
+    border: 0.5px solid rgb(233, 241, 248);
+}
+.outline-design:focus-visible{
+     border: 1px solid rgb(95, 53, 249);
+    outline: 0;
+    box-shadow: 0 0 4px 2px rgba(162, 140, 240, 0.5);
+}
+
+.rounded-12{border-radius: 12px;}
+
+.btn-secondary {
+  --bs-btn-color:var(--dark-gray-text);
+  --bs-btn-bg:rgb(243, 244, 246);
+  --bs-btn-border-color:rgb(243, 244, 246);
+  --bs-btn-hover-color: var(--dark-gray-text);
+  --bs-btn-hover-bg: rgb(218, 219, 219);
+  --bs-btn-hover-border-color:rgb(218, 219, 219);
+  --bs-btn-active-color:var(--dark-gray-text);
+  --bs-btn-active-bg:rgb(218, 219, 219);
+  --bs-btn-active-border-color: rgb(218, 219, 219);
+  --bs-btn-active-shadow:0;
+}
+
+.btn-danger {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--nav-accent-color);
+  --bs-btn-border-color:var(--nav-accent-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg:var(--nav-accent-color);
+  --bs-btn-hover-border-color:var(--nav-accent-color);
+  --bs-btn-focus-shadow-rgb: 225, 83, 97;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--nav-accent-color);
+  --bs-btn-active-border-color:var(--nav-accent-color);
+  --bs-btn-active-shadow:0;
+ 
+}
+.shadow-light:hover{
+    box-shadow:0 4px 8px rgba(95, 53, 249,0.3) ;
+}
+/****************************************************************************/
+.phone-icon{
+    width: 20px;
+    height: 20px;
+    color: var(--contact-color);
+}
+.info-icon{
+    width: 50px;
+    height: 50px;
+    background-color: var(--contact-color);
+}
+.email-icon {
+      width: 20px;
+    height: 20px;
+    background-color: var(--email-bg);
+}
+.location-icon{
+      width: 20px;
+    height: 20px;
+   
+    background-color: var(--location-bg);
+
+}
+.email-icon-big{
+      width: 30px;
+    height: 30px;
+    background-color: var(--email-bg);
+
+}
+.call-icon{
+   width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--location-bg);
+}
+.searchIcon{top: 32%;
+ 
+}
+
+.type-icon{
+   width: 50px;
+    height: 50px;  
+}
+
+.fav-iconn{
+   width: 30px;
+    height: 30px;
+}
+
+.contact-icon{
+    width: 40px;
+    height: 40px;
+    background-color: var(--contact-color); 
+}
+.bg-favline{background-color: rgb(255, 249, 237);}
+ .rose-bg{background-color: rgb(255, 241, 242);}
+ .circle-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .position-fav{
+    top:-5% ;
+    left: 12%;
+ }
+ .position-emergency{
+    top:50% ;
+    left: 12%;
+ }
+ .left{right: 0;}
+
